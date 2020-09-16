@@ -212,13 +212,13 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>0.625in</Width>
+                  <Width>0.52083in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.51041in</Width>
+                  <Width>0.92708in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.59375in</Width>
+                  <Width>2.20833in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.44792in</Width>
@@ -227,25 +227,25 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.70833in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.71875in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1in</Width>
+                  <Width>0.67708in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.83334in</Width>
+                  <Width>0.72917in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.79167in</Width>
+                  <Width>0.40625in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -628,7 +628,7 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Attachments</Value>
+                                  <Value>Attach</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1059,6 +1059,7 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
                                       </Action>
                                     </Actions>
                                   </ActionInfo>
+                                  <ToolTip>Attachment Count</ToolTip>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -1080,6 +1081,7 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
                               </Action>
                             </Actions>
                           </ActionInfo>
+                          <ToolTip>Attachment Count</ToolTip>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1125,8 +1127,9 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
             </TablixRowHierarchy>
             <DataSetName>TrackitTask</DataSetName>
             <Top>0.69666in</Top>
+            <Left>0.12501in</Left>
             <Height>0.5in</Height>
-            <Width>12.80209in</Width>
+            <Width>10.34374in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -1147,15 +1150,13 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
             </Style>
           </Image>
         </ReportItems>
-        <Height>2.55208in</Height>
+        <Height>1.25in</Height>
         <Style />
       </Body>
-      <Width>13.09376in</Width>
+      <Width>10.46875in</Width>
       <Page>
-        <LeftMargin>1in</LeftMargin>
-        <RightMargin>1in</RightMargin>
-        <TopMargin>1in</TopMargin>
-        <BottomMargin>1in</BottomMargin>
+        <PageHeight>8.5in</PageHeight>
+        <PageWidth>11in</PageWidth>
         <Style />
       </Page>
     </ReportSection>
@@ -1240,6 +1241,6 @@ sn5pD7PAVQ4c7CyRYDs7X9tdz03Vr04zy+xAdOryZdXZMEA0mLVwdXXxujjFz+3TJyEzu7i8rKy86PjG
     </EmbeddedImage>
   </EmbeddedImages>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportServerUrl>http://msb-prg-018/ReportServer</rd:ReportServerUrl>
+  <rd:ReportServerUrl>http://msb-db-prd/ReportServer</rd:ReportServerUrl>
   <rd:ReportID>92a880f8-29e4-46fa-85e2-d6044ed3c6a3</rd:ReportID>
 </Report>
