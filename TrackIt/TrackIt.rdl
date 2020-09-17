@@ -19,7 +19,7 @@
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
           <QueryParameter Name="@TicketNbr">
-            <Value>=iif(Len(Parameters!TicketNbr.Value)=0, "", Parameters!TicketNbr.Value ) &amp; "%"</Value>
+            <Value>=iif(Len(Parameters!TicketNbr.Value)=0, "%", Parameters!TicketNbr.Value )</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
           <QueryParameter Name="@Requester">
@@ -529,7 +529,7 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Close</Value>
+                                  <Value>Technicain</Value>
                                   <Style>
                                     <FontFamily>Arial</FontFamily>
                                     <FontSize>8pt</FontSize>
@@ -822,6 +822,7 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!REQUEST.Value</Value>
+                                  <ToolTip>Requsted By</ToolTip>
                                   <Style>
                                     <FontSize>8pt</FontSize>
                                   </Style>
@@ -864,6 +865,7 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>REQDATE</rd:DefaultName>
+                          <ToolTip>Date requested </ToolTip>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -963,6 +965,7 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>CLSDBY</rd:DefaultName>
+                          <ToolTip>Technician That Closed Ticket</ToolTip>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -1165,12 +1168,12 @@ AND t.OPENDATE BETWEEN  @TicketOpenStartDate AND @TicketOpenEndDate</CommandText
     <ReportParameter Name="Technician">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
-      <Prompt>Technician Name</Prompt>
+      <Prompt>Technician Name (last, first) or partial</Prompt>
     </ReportParameter>
     <ReportParameter Name="Requester">
       <DataType>String</DataType>
       <AllowBlank>true</AllowBlank>
-      <Prompt>Requested By</Prompt>
+      <Prompt>Requested By (last, first) or partial</Prompt>
     </ReportParameter>
     <ReportParameter Name="TicketNbr">
       <DataType>String</DataType>
